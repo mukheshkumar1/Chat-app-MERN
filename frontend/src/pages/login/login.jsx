@@ -19,7 +19,7 @@ const Login = () => {
             <h1 className="text-3xl font-semibold text-center text-gray-300">
              
                 Login
-                <span className="text-blue-500">Chat App</span>
+                <span className="text-blue-500">Textgram</span>
             </h1>
         <form onSubmit={handleSubmit}>
           <label className="label p-2">
@@ -46,9 +46,16 @@ const Login = () => {
               {loading ? <span className="loading loading-spinner"></span>:"Login"}
             </button>
           </div>
-          <Link to = '/signup' className="text-sm hover:underline hover:text-blue-400 mt-2 inline-block">
-            {"Don't"} Have an Account
-          </Link>
+          <div className="flex justify-between mt-2">
+      <Link to='/forgot-password' className="text-sm hover:underline hover:text-blue-400 inline-block">
+        Forgot Password?
+      </Link>
+      </div>
+      <div className="flex justify-between mt-2">
+      <Link to='/signup' className="text-sm hover:underline hover:text-blue-400 inline-block">
+        {"Don't"} Have an Account
+      </Link>
+    </div>
         </div>
           
            </form>
